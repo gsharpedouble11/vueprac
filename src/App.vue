@@ -1,15 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Counter />
+  <Twoway />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Counter from './components/Counter.vue'
+import Twoway from './components/Twoway.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Counter,
+    Twoway
   }
 }
 </script>
@@ -22,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+div {
+  margin: 3rem;
 }
 </style>
